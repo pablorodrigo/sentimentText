@@ -4,7 +4,7 @@ public class TestClass {
 
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception  {
 		
 		//JSONArray teste = new JSONArray();
 		//JsonFiles jsonFiles = new JsonFiles();
