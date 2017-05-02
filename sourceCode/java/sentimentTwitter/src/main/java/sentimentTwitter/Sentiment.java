@@ -10,9 +10,9 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 public class Sentiment {
 
 	
-	public void sentimentResponse(String text){
+	public JSONObject sentimentResponse(String text){
 		
-		text = "great value in its price range!";
+		//text = "great value in its price range!";
 		
 		try {
 			// These code snippets use an open-source library.
@@ -24,11 +24,14 @@ public class Sentiment {
 			
 			JSONObject myObject = new JSONObject(response);
 			
-			System.out.println(myObject.get("body"));
+			return myObject.getJSONObject("body").getJSONObject("object");
+			
+			//System.out.println(myObject.getJSONObject("body").getJSONObject("object"));
 		} catch (UnirestException e) {
 			System.out.println("Error:");
 			e.printStackTrace();
 		}
+		return null;
 		
 	}
 	

@@ -11,6 +11,8 @@ public class JsonFiles {
 	@SuppressWarnings("unchecked")
 	public JSONArray jsonFileRead(String fileLocation) throws Exception {
 
+		fileLocation = "/home/pablo/workspace/trabalhoUninorte/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/100twitters.json";
+		
 		// novo array de json
 		JSONArray newJsonArray = new JSONArray();
 
