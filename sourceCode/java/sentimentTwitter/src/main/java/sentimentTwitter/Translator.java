@@ -16,7 +16,7 @@ public class Translator {
 		
 		String aux;
 		
-		text = text.replace("ñ", "não").replace("Ñ", "não").replaceAll("#", "").replaceAll("_", "").replaceAll(" ", "+");
+		text = dicionaryPT(text);
 		
 		HttpResponse<JsonNode> response = null;
 		try {
@@ -40,5 +40,21 @@ public class Translator {
 		//System.out.println(myObject.getJSONObject("body").getJSONObject("object").getJSONObject("data")
 			//	.getJSONArray("translations").getJSONObject(0).get("translatedText"));
 	}
-
+	
+	public String dicionaryPT(String text){
+		return text.replaceAll("ñ", "não")
+				.replaceAll("Ñ", "não")
+				.replaceAll("pqp", "puta+que+pariu")
+				.replaceAll("Hj", "Hoje")
+				.replaceAll("hj", "hoje")
+				.replaceAll("msg", "mensagem")
+				.replaceAll("Telefônica", "telefonia")
+				.replaceAll("pré", "pré-pago")
+				.replaceAll("pós", "pós-pago")
+				.replaceAll("https://www.", "")
+				.replaceAll("%", "porcento")
+				.replaceAll("#", "")
+				.replaceAll("_", "")
+				.replaceAll(" ", "+");
+	}
 }
