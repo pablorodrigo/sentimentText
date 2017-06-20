@@ -33,7 +33,8 @@ public class CreateFileExecel {
 				JSONObject texts = (JSONObject) jsonArray.get(i);
 				HSSFRow row = firstSheet.createRow(i);
 
-				row.createCell(0).setCellValue(texts.get("text").toString());
+				row.createCell(0).setCellValue(texts.get("originalText").toString());
+				row.createCell(1).setCellValue(texts.get("sentiment").toString());
 
 			}
 
