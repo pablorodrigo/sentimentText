@@ -46,7 +46,7 @@
     "email": "feedback@twinword.com",
     "ratio": 1
   },
-  "translatedText": "That bag the mobile network of my @Vivoemrede cal is a shit ... That's because it's postpaid and one of the best. How do you do now? Someone to help ??"
+  "translatedText": "That bag the mobile network of my @Vivoemrede cal is a shit ... That&#39;s because it&#39;s postpaid and one of the best. How do you do now? Someone to help ??"
 }, {
   "originalText": "@backtoramona simmm, @Vivoemrede te amamos",
   "sentiment": {
@@ -121,7 +121,7 @@
     "email": "feedback@twinword.com",
     "ratio": 0.6976667045258
   },
-  "translatedText": "@Vivoemrede has managed to do the feat of raising the price of prepaid internet. Congratulations, I'm going to change operator."
+  "translatedText": "@Vivoemrede has managed to do the feat of raising the price of prepaid internet. Congratulations, I&#39;m going to change operator."
 }, {
   "originalText": "@Vivoemrede estou já a 27 minutos esperando para falar com o atendente e nada! Onde está a lei do tempo de espera?",
   "sentiment": {
@@ -147,7 +147,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.25436018166134
   },
-  "translatedText": "@Vivoemrede I'm already 27 minutes waiting to talk to the attendant and nothing! Where is the law of waiting time?"
+  "translatedText": "@Vivoemrede I&#39;m already 27 minutes waiting to talk to the attendant and nothing! Where is the law of waiting time?"
 }, {
   "originalText": "Dá pra parar de roubar os meus créditos, lixo de empresa @Vivoemrede",
   "sentiment": {
@@ -340,7 +340,7 @@
     "email": "feedback@twinword.com",
     "ratio": 0
   },
-  "translatedText": "I'm also waiting @Vivoemrede"
+  "translatedText": "I&#39;m also waiting @Vivoemrede"
 }, {
   "originalText": "@Vivoemrede um absurdo pagar sem poder usar. Internet. Sou obrigado a usar o da claro ou seja meus dados. Pra ser desrespeitado.",
   "sentiment": {
@@ -395,7 +395,7 @@
     "email": "feedback@twinword.com",
     "ratio": 1
   },
-  "translatedText": "Wow, that's all! @Vivoemrede FUCK OPERATOR"
+  "translatedText": "Wow, that&#39;s all. @Vivoemrede FUCK OPERATOR"
 }, {
   "originalText": "Não adianta botar japa pra fazer comercial da VIVO TUDO TURBO porque essa merda NÃO PRESTA! @Vivoemrede",
   "sentiment": {
@@ -427,7 +427,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.32098245773784
   },
-  "translatedText": "It's no use putting japa to make VIVO ALL TURBO commercial because that shit DOES NOT! @Vivoemrede"
+  "translatedText": "It&#39;s no use putting japa to make VIVO ALL TURBO commercial because that shit DOES NOT! @Vivoemrede"
 }, {
   "originalText": "@Bruno_kst Botei essa merda hoje porra, o serviço de vocês não presta nem pra mecher no twitter @Vivoemrede",
   "sentiment": {
@@ -525,7 +525,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.63122282505227
   },
-  "translatedText": "How about @Vivoemrede? No internet since 4pm ... It's difficult. Using here my 4g of @TIMOfficial to complain, pretty ugly huh? Estrocar?"
+  "translatedText": "How about @Vivoemrede? No internet since 4pm ... It&#39;s difficult. Using here my 4g of @TIMOfficial to complain, pretty ugly huh? Estrocar?"
 }, {
   "originalText": "@_Looanna Estamos te aguardando para prosseguir o seu atendimento.",
   "sentiment": {
@@ -579,10 +579,13 @@
   "originalText": "@Vivoemrede Boa noite, preciso do meu codigo PUK. Como proceder?",
   "sentiment": {
     "result_msg": "Success",
-    "score": 0.423621304,
+    "score": 0.240255209,
     "keywords": [{
       "score": 0.943387349,
       "word": "good"
+    }, {
+      "score": -0.126476981,
+      "word": "night"
     }, {
       "score": -0.096144741,
       "word": "need"
@@ -592,9 +595,9 @@
     "type": "positive",
     "version": "4.0.0",
     "email": "feedback@twinword.com",
-    "ratio": 0.81502304368497
+    "ratio": 0.6181475298317
   },
-  "translatedText": "@Vivoemrede Good evening, I need my PUK code. How to proceed?"
+  "translatedText": "@Vivoemrede Good night, I need my PUK code. How to proceed?"
 }, {
   "originalText": "@Vivoemrede comprei o pacote adicional de 1G após acabar a franquia, e não entrou. Me deram um prazo de 24h para estabelecer e não resolveu",
   "sentiment": {
@@ -677,16 +680,13 @@
   "originalText": "@Changwkim Está com alguma dificuldade com nossos serviços? Detalhe melhor via DM. Vou lhe ajudar. :)",
   "sentiment": {
     "result_msg": "Success",
-    "score": 0.06803611485,
+    "score": 0.0887891476,
     "keywords": [{
       "score": 0.906288393,
       "word": "better"
     }, {
       "score": 0.200935065,
       "word": "help"
-    }, {
-      "score": 0.117922934,
-      "word": "will"
     }, {
       "score": 0.117922934,
       "word": "detail"
@@ -705,9 +705,9 @@
     "type": "positive",
     "version": "4.0.0",
     "email": "feedback@twinword.com",
-    "ratio": 0.081348189564846
+    "ratio": 0.035564742675617
   },
-  "translatedText": "@Changwkim Do you have any difficulties with our services? Better detail via DM. I'll help you. :)"
+  "translatedText": "@Changwkim Do you have any difficulties with our services? Better detail via DM. I&#39;ll help you. :)"
 }, {
   "originalText": "@Vivoemrede serviço móvel",
   "sentiment": {
@@ -909,7 +909,7 @@
     "email": "feedback@twinword.com",
     "ratio": 0.52774055231339
   },
-  "translatedText": "I'm going to use this one next time with @Vivoemrede auhauha https: \/\/ twitter.com\/amarelito\/stat us \/ 693948841603760128 ..."
+  "translatedText": "I&#39;m going to use this one next time with @Vivoemrede auhauha https: \/\/ twitter.com\/amarelito\/stat us \/ 693948841603760128 ..."
 }, {
   "originalText": "@mands505 envie seus dados via DM.Assim ajudamos e mantemos seus dados pessoais em sigilo.",
   "sentiment": {
@@ -1042,7 +1042,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.62654750089115
   },
-  "translatedText": "25 minutes waiting to meet me and: do not solve my problem ????? It's hard to defend you @Vivoemrede"
+  "translatedText": "25 minutes waiting to meet me and: do not solve my problem ????? It&#39;s hard to defend you @Vivoemrede"
 }, {
   "originalText": "@DenilBoss neste canal de atendimento podemos te ajudar.",
   "sentiment": {
@@ -1097,7 +1097,7 @@
     "email": "feedback@twinword.com",
     "ratio": 0.35487326582255
   },
-  "translatedText": "@DenilBoss Good evening. What's happening? Are you having trouble using our services? Detail by kindness, (cont)"
+  "translatedText": "@DenilBoss Good evening. What&#39;s happening? Are you having trouble using our services? Detail by kindness, (cont)"
 }, {
   "originalText": "@Vivoemrede Tá acontecendo que meu número simplesmente não recebe dados móveis e NINGUÉM resolve o problema. Protocolo Anatel: 3071492016",
   "sentiment": {
@@ -1132,7 +1132,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.58339143122873
   },
-  "translatedText": "@Vivoemrede It's happening that my number simply does not receive mobile data and NOBODY solves the problem. Anatel Protocol: 3071492016"
+  "translatedText": "@Vivoemrede It&#39;s happening that my number simply does not receive mobile data and NOBODY solves the problem. Anatel Protocol: 3071492016"
 }, {
   "originalText": "Mesmo com 7 protocolos de atendimento e uma ida à loja estou há 4 dias sem rede no celular. Obrigada, @Vivoemrede",
   "sentiment": {
@@ -1235,42 +1235,36 @@
   "originalText": "Oi @Vivoemrede não me decepcione ;) #InternetMóvel #VivoConectada #ToTestando a rede que #PegaBem #Vivo #Modem pic.twitter.com\/OgTl9b6mwr",
   "sentiment": {
     "result_msg": "Success",
-    "score": -0.1096002045,
+    "score": 0.045417370666667,
     "keywords": [{
+      "score": 0.569059516,
+      "word": "disappoint"
+    }, {
       "score": 0.192192596,
       "word": "live"
     }, {
-      "score": 0.096144741,
-      "word": "let"
-    }, {
       "score": -0.625,
       "word": "not"
-    }, {
-      "score": -0.101738155,
-      "word": "down"
     }],
     "author": "twinword inc.",
     "result_code": "200",
-    "type": "negative",
+    "type": "neutral",
     "version": "4.0.0",
     "email": "feedback@twinword.com",
-    "ratio": -0.4318898657835
+    "ratio": 0.098288118604504
   },
-  "translatedText": "Hi @Vivoemrede do not let me down;) VivoMobile LiveConnected ToTestando the network that PegaBem Live Modem pic.twitter.com\/OgTl9b6mwr"
+  "translatedText": "Hi @Vivoemrede do not disappoint me;) VivoMobile LiveConnected ToTestando the network that PegaBem Live Modem pic.twitter.com\/OgTl9b6mwr"
 }, {
   "originalText": "@Vivoemrede ... E deixei uma operadora por causa de atendimento, vou conversar com minha mãe, para que um pós pago e ainda tenho q carregar.",
   "sentiment": {
     "result_msg": "Success",
-    "score": 0.066329381833333,
+    "score": 0.0560106714,
     "keywords": [{
       "score": 0.467771937,
       "word": "attendance"
     }, {
       "score": 0.152059727,
       "word": "paid"
-    }, {
-      "score": 0.117922934,
-      "word": "will"
     }, {
       "score": -0.162909152,
       "word": "have"
@@ -1286,9 +1280,9 @@
     "type": "positive",
     "version": "4.0.0",
     "email": "feedback@twinword.com",
-    "ratio": 0.36934026715407
+    "ratio": 0.29184081602253
   },
-  "translatedText": "@Vivoemrede ... And I left a carrier because of attendance, I'll talk to my mother, so a paid postpaid and I still have to load."
+  "translatedText": "@Vivoemrede ... And I left a carrier because of attendance, I&#39;ll talk to my mother, so a paid postpaid and I still have to load."
 }, {
   "originalText": "@AdairJunior Detalhe o que está ocorrendo para que possamos te ajudar.",
   "sentiment": {
@@ -1643,25 +1637,22 @@
   "originalText": "@VitorCogo_ Vitor, informe nome completo e CPF via DM. Vou verificar.",
   "sentiment": {
     "result_msg": "Success",
-    "score": 0.07256811325,
+    "score": 0.0190511945,
     "keywords": [{
       "score": 0.13424713,
       "word": "name"
-    }, {
-      "score": 0.117922934,
-      "word": "will"
     }, {
       "score": -0.096144741,
       "word": "check"
     }],
     "author": "twinword inc.",
     "result_code": "200",
-    "type": "positive",
+    "type": "neutral",
     "version": "4.0.0",
     "email": "feedback@twinword.com",
-    "ratio": 0.44794341429156
+    "ratio": 0.1653807872414
   },
-  "translatedText": "@VitorCogo Vitor, enter full name and CPF via DM. I'll check."
+  "translatedText": "@VitorCogo Vitor, enter full name and CPF via DM. I&#39;ll check."
 }, {
   "originalText": "@AdairJunior @Vivoemrede comigo é a mesma coisa...o autoatendimento por SMS também é um LIXO!",
   "sentiment": {
@@ -1944,7 +1935,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.10471520189778
   },
-  "translatedText": "A @Vivoemrede says: Do not wait to be answered Visit website and chat. How do you do without the Internet that I pay and I'm always without?"
+  "translatedText": "A @Vivoemrede says: Do not wait to be answered Visit website and chat. How do you do without the Internet that I pay and I&#39;m always without?"
 }, {
   "originalText": "@Killerbreu ;)",
   "sentiment": {
@@ -1972,7 +1963,7 @@
     "email": "feedback@twinword.com",
     "ratio": 0
   },
-  "translatedText": "I'm at telephony @VivoEmrede in São Paulo, SP swarmapp.com\/c\/0GCiuUcdFGh"
+  "translatedText": "I&#39;m at telephony @VivoEmrede in São Paulo, SP swarmapp.com\/c\/0GCiuUcdFGh"
 }, {
   "originalText": "Toda vez que o cara precisa ligar pra @Vivoemrede é essa merda. Mais de 1h de espera, e sigo aguardando atendimento. pic.twitter.com\/ndiKlRxwQj",
   "sentiment": {
@@ -2004,21 +1995,21 @@
     "email": "feedback@twinword.com",
     "ratio": 0.34149516065284
   },
-  "translatedText": "Every time the guy needs to call @Vivoemrede it's that shit. More than 1h wait, and I'm still waiting for service. Pic.twitter.com\/ndiKlRxwQj"
+  "translatedText": "Every time the guy needs to call @Vivoemrede it&#39;s that shit. More than 1h wait, and I&#39;m still waiting for service. Pic.twitter.com\/ndiKlRxwQj"
 }, {
   "originalText": "@Vivoemrede Minha mãe um plano para mim, 400 mbp e ainda com dez. Tento entender pois, em uma semana acabou e eu uma recarga de 30 reis e...",
   "sentiment": {
     "result_msg": "Success",
-    "score": -0.0026740575,
+    "score": 0.008468072375,
     "keywords": [{
+      "score": 0.192192596,
+      "word": "then"
+    }, {
       "score": 0.152059727,
       "word": "understand"
     }, {
       "score": 0.117922934,
       "word": "king"
-    }, {
-      "score": 0.103055557,
-      "word": "one"
     }, {
       "score": -0.080724414,
       "word": "still"
@@ -2031,9 +2022,9 @@
     "type": "neutral",
     "version": "4.0.0",
     "email": "feedback@twinword.com",
-    "ratio": 0.4202981317641
+    "ratio": 0.50439669719853
   },
-  "translatedText": "@Vivoemrede My mother a plan for me, 400 mbp and still with ten. I try to understand because in one week it ended and I a recharge of 30 kings and ..."
+  "translatedText": "@Vivoemrede My mother a plan for me, 400 mbp and still with ten. I try to understand then, in a week is over and I a recharge of 30 kings and ..."
 }, {
   "originalText": "@Vivoemrede vocês deveriam tomar vergonha na cara e atender o telefone",
   "sentiment": {
@@ -2148,7 +2139,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.16018902483956
   },
-  "translatedText": "You already have 20 Mins that I listen to this song Maudita @Vivoemrede"
+  "translatedText": "You already have 20 Mins that I listen to this song maudita @Vivoemrede"
 }, {
   "originalText": "@rodrigoartuso @Vivoemrede teamo",
   "sentiment": {
@@ -2170,19 +2161,16 @@
   "originalText": "@ingridurand @Vivoemrede voce vai se fuder",
   "sentiment": {
     "result_msg": "Success",
-    "score": 0.117922934,
-    "keywords": [{
-      "score": 0.117922934,
-      "word": "will"
-    }],
+    "score": 0,
+    "keywords": [],
     "author": "twinword inc.",
     "result_code": "200",
-    "type": "positive",
+    "type": "neutral",
     "version": "4.0.0",
     "email": "feedback@twinword.com",
-    "ratio": 1
+    "ratio": 0
   },
-  "translatedText": "@ingridurand @Vivoemrede you'll fuck yourself"
+  "translatedText": "@ingridurand @Vivoemrede you&#39;ll fuck yourself"
 }, {
   "originalText": "@rodrigoartuso @Vivoemrede cheia",
   "sentiment": {
@@ -2280,7 +2268,7 @@
     "email": "feedback@twinword.com",
     "ratio": -0.55615526484114
   },
-  "translatedText": "@vivoemrede I requested that my paid postpaid be transformed into prepaid and canceled my account! Now they do not answer at the switchboard. How do you solve it? Absurd"
+  "translatedText": "@vivoemrede requested that my paid postpaid be transformed into prepaid and canceled my account! Now they do not answer at the switchboard. How do you solve it? Absurd"
 }, {
   "originalText": "Só aguardando a fidelidade da @vivoemrede acabar para comprar outro chip. Faz mais de 30h que comprei pacote de internet e nada.",
   "sentiment": {
@@ -2303,7 +2291,7 @@
     "email": "feedback@twinword.com",
     "ratio": 0.66698414853284
   },
-  "translatedText": "Just waiting for the fidelity of @exvoemrede end up buying another chip. It's been over 30 hours since I bought an internet package and nothing."
+  "translatedText": "Just waiting for the fidelity of @exvoemrede end up buying another chip. It&#39;s been over 30 hours since I bought an internet package and nothing."
 }, {
   "originalText": "@Vivoemrede Quanta decepção. Pensar que nessa semana comprei um chip de dados de vocês para o meu tablet!!!!!!!!",
   "sentiment": {
@@ -2528,5 +2516,5 @@
     "email": "feedback@twinword.com",
     "ratio": -0.33101241838376
   },
-  "translatedText": "@Vivoemrede I have 5 protocols and no help! Not by phone, nor by SMS nor by Twitter! I'm mad, huh?"
+  "translatedText": "@Vivoemrede I have 5 protocols and no help! Not by phone, nor by SMS nor by Twitter! I&#39;m mad, huh?"
 }]

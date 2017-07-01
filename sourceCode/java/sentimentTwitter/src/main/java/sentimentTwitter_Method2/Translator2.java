@@ -1,18 +1,17 @@
-package sentimentTwitter;
+package sentimentTwitter_Method2;
 
-
-import org.json.JSONObject;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import org.json.JSONObject;
 import org.unbescape.html.HtmlEscape;
 
 /**
  * Class que utiliza api do google para traduzir um texto em pt para en
  */
-public class Translator {
+public class Translator2 {
 
 	private String URL = "https://translation.googleapis.com/language/translate/v2?key=AIzaSyD6h-jESBjPYdeHJgNELJDqnA_h1usWG-U&source=pt&target=en&q=";
 
@@ -39,7 +38,7 @@ public class Translator {
 		aux = myObject.getJSONObject("body").getJSONObject("object").getJSONObject("data")
 				.getJSONArray("translations").getJSONObject(0).get("translatedText").toString();
 
-
+		// api para manipulacao de strings
 		String unescaped = HtmlEscape.unescapeHtml(aux);
 
 		return unescaped;
@@ -65,6 +64,10 @@ public class Translator {
 				.replaceAll("%", "porcento")
 				.replaceAll("#", "")
 				.replaceAll("_", "")
-				.replaceAll(" ", "+");
+				.replaceAll(" ", "+")
+				.replaceAll("Tweetar", "Tweet")
+				.replaceAll("PORRA", "merda")
+				.replaceAll("saco", "merda");
+
 	}
 }

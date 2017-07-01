@@ -54,7 +54,7 @@ public class TextSentimentMain {
 		Criar arquivo com os sentiment coletado das API
 		 */
         File file = new File(
-                "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/JsonFile.json");
+                "/home/pablo/workspace/tcc/sentimentTwitter_Method1/sourceCode/java/sentimentTwitter_Method1/src/jsonFiles/JsonFile-Method2.json");
         file.createNewFile();
         FileWriter fileWriter = new FileWriter(file);
 

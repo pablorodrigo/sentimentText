@@ -1,4 +1,4 @@
-package sentimentTwitter;
+package sentimentTwitter_Method2;
 
 
 import org.json.simple.JSONArray;
@@ -7,13 +7,13 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 
-public class ExcelMain {
+public class ExcelMain2 {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) throws Exception {
 
 
-        String fileLocation = "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/JsonFile.json";
+        String fileLocation = "/home/pablo/workspace/tcc/sentimentTwitter_Method1/sourceCode/java/sentimentTwitter_Method1/src/jsonFiles/JsonFile-Method2.json";
 
         // novo array de json
         JSONArray newJsonArray = new JSONArray();
@@ -35,19 +35,15 @@ public class ExcelMain {
             // pega todos os objetos dentro da array
             JSONObject twitter = (JSONObject) fileJsonArray.get(i);
 
-            //pega os objeto dentro de um determinado array
-            JSONObject sentiment = (JSONObject) twitter.get("sentiment");
-
-
             newObject_for_newJsonArray.put("originalText", twitter.get("originalText"));
-            newObject_for_newJsonArray.put("sentiment", sentiment.get("type"));
+            newObject_for_newJsonArray.put("sentiment", twitter.get("sentiment"));
             newJsonArray.add(newObject_for_newJsonArray);
             newObject_for_newJsonArray = new JSONObject();
 
         }
 
-        CreateFileExecel createFileExecel = new CreateFileExecel();
-        createFileExecel.expExcel("test_execel.xls", newJsonArray);
+        CreateFileExecel2 createFileExecel = new CreateFileExecel2();
+        createFileExecel.expExcel("test_execel_01.xls", newJsonArray);
 
 
     }

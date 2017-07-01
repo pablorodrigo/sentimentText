@@ -18,13 +18,13 @@ public class Sentiment {
 			// These code snippets use an open-source library.
 			// http://unirest.io/java
 			HttpResponse<JsonNode> response = Unirest.post("https://twinword-sentiment-analysis.p.mashape.com/analyze/")
-					.header("X-Mashape-Key", "26YXTJMZimmshDP7IzoC2fwyaXGtp1SSD8IjsnK3ACuieZcbQm")
+					.header("X-Mashape-Key", "tsUPVnZIQEmshlGPfeKWJCaZYiwip1f8GzijsnHve6KXdWKuuX")
 					.header("Content-Type", "application/x-www-form-urlencoded").header("Accept", "application/json")
 					.field("text", text).asJson();
 			
 			JSONObject myObject = new JSONObject(response);
 			
-			return myObject.getJSONObject("body").getJSONObject("object");
+			return myObject.getJSONObject("polarity");
 			
 			//System.out.println(myObject.getJSONObject("body").getJSONObject("object"));
 		} catch (UnirestException e) {
