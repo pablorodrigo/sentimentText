@@ -13,7 +13,7 @@ public class TextSentimentMain2 {
 
         JSONArray auxJsonArray = new JSONArray();
         JsonFiles2 jsonFiles = new JsonFiles2();
-        auxJsonArray = jsonFiles.jsonFileRead("");
+        auxJsonArray = jsonFiles.jsonFileRead("/home/pablo/Desktop/1-janeiro.json");
         Translator2 translator = new Translator2();
         Sentiment2 sentiment = new Sentiment2();
 
@@ -23,6 +23,11 @@ public class TextSentimentMain2 {
 
 //		CreateFileExecel createFileEecel = new CreateFileExecel();
 //		createFileEecel.expExcel("teste.xls", auxJsonArray);
+
+        File file = new File(
+                "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/JsonFile-Method3.json");
+        file.createNewFile();
+        FileWriter fileWriter = new FileWriter(file);
 
 		/*
         fazer a tradução do texto e sentiment do texto, armazenando num array json
@@ -44,25 +49,29 @@ public class TextSentimentMain2 {
 
 
             aux = translator.translate(texts.get("text").toString());
+            newJsonFile.put("id", i);
             newJsonFile.put("translatedText", aux);
             newJsonFile.put("sentiment", sentiment.sentimentResponse(aux));
-            newJsonFileList.add(newJsonFile);
+            //newJsonFileList.add(newJsonFile);
+            fileWriter.write(newJsonFile.toJSONString()+",");
+            fileWriter.flush();
             newJsonFile = new JSONObject();
 
         }
 
-        System.out.println(newJsonFileList);
+        //System.out.println(newJsonFileList);
 
 		/*
 		Criar arquivo com os sentiment coletado das API
-		 */
+
         File file = new File(
-                "/home/pablo/workspace/tcc/sentimentTwitter_Method1/sourceCode/java/sentimentTwitter_Method1/src/jsonFiles/JsonFile-Method2.json");
+                "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/JsonFile-Method3.json");
         file.createNewFile();
         FileWriter fileWriter = new FileWriter(file);
 
         fileWriter.write(newJsonFileList.toJSONString());
         fileWriter.flush();
+         */
         fileWriter.close();
 
     }

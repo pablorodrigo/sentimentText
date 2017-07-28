@@ -1,5 +1,4 @@
-package sentimentTwitter;
-
+package sentimentTwitter_Method1;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;

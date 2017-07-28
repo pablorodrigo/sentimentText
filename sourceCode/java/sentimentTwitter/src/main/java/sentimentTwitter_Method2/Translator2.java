@@ -64,6 +64,8 @@ public class Translator2 {
 				.replaceAll("%", "porcento")
 				.replaceAll("#", "")
 				.replaceAll("_", "")
+				.replaceAll("\'", "")
+				.replaceAll("[-+=*&;%$#_|/]", "")
 				.replaceAll(" ", "+")
 				.replaceAll("Tweetar", "Tweet")
 				.replaceAll("PORRA", "merda")

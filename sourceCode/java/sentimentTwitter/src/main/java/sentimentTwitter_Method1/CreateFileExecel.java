@@ -1,4 +1,4 @@
-package sentimentTwitter;
+package sentimentTwitter_Method1;
 
 import java.io.File;
 import java.io.FileOutputStream;

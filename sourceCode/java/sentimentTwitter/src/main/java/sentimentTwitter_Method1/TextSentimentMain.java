@@ -1,9 +1,6 @@
-package sentimentTwitter;
-
-import org.apache.commons.codec.StringEncoder;
+package sentimentTwitter_Method1;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.unbescape.html.HtmlEscape;
 
 import java.io.File;
 import java.io.FileWriter;
