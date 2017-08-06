@@ -1,4 +1,4 @@
-package sentimentTwitter_Method1;
+package br.com.uninorte.tcc.twittersentiment;
 
 import java.io.File;
 import java.io.FileOutputStream;

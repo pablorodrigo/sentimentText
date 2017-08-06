@@ -1,18 +1,23 @@
-package sentimentTwitter_Method1;
+package br.com.uninorte.tcc.twittersentiment;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.io.File;
 import java.io.FileWriter;
 
-public class TextSentimentMain {
+public class SentimentMain {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) throws Exception {
 
         JSONArray auxJsonArray = new JSONArray();
         JsonFiles jsonFiles = new JsonFiles();
-        auxJsonArray = jsonFiles.jsonFileRead("");
+
+
+        String fileLocation = "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/100twitters.json";
+
+        auxJsonArray = jsonFiles.jsonFileRead(fileLocation);
         Translator translator = new Translator();
         Sentiment sentiment = new Sentiment();
 
@@ -23,39 +28,47 @@ public class TextSentimentMain {
 //		CreateFileExecel createFileEecel = new CreateFileExecel();
 //		createFileEecel.expExcel("teste.xls", auxJsonArray);
 
+        //criar arquivo json com o sentimento do texto
+        File file = new File(
+                "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/JsonFile-Response.json");
+        file.createNewFile();
+        FileWriter fileWriter = new FileWriter(file);
+        fileWriter.write("[");
+
 		/*
         fazer a tradução do texto e sentiment do texto, armazenando num array json
 		 */
         for (int i = 0; i < auxJsonArray.size(); i++) {
             System.out.println("traduzindo e sentimento do " + i);
             JSONObject texts = (JSONObject) auxJsonArray.get(i);
-            newJsonFile.put("originalText", texts.get("text").toString());
-            // System.out.println(texts.get("text").toString());
-            // System.out.println(texts.get("text").toString().replaceAll("#",
-            // "").replaceAll("_", "").replaceAll(" ", "+"));
-            // translator.translate(texts.get("text").toString());
-            // translator.translate(texts.get("text").toString().replaceAll("#",
-            // "").replaceAll("_", "").replaceAll(" ", "+"));
 
             aux = translator.translate(texts.get("text").toString());
+            org.json.JSONObject tempJson = sentiment.sentimentResponse(aux);
+
+            newJsonFile.put("id", i);
+            newJsonFile.put("originalText", texts.get("text"));
             newJsonFile.put("translatedText", aux);
-            newJsonFile.put("sentiment", sentiment.sentimentResponse(aux));
-            newJsonFileList.add(newJsonFile);
+            newJsonFile.put("polarity", tempJson.get("polarity"));
+            newJsonFile.put("type", tempJson.get("type"));
+            //newJsonFileList.add(newJsonFile);
+            fileWriter.write(newJsonFile.toJSONString() + ",");
+            fileWriter.flush();
             newJsonFile = new JSONObject();
 
         }
 
-        System.out.println(newJsonFileList);
-
 		/*
-		Criar arquivo com os sentiment coletado das API
-		 */
+        Criar arquivo com os sentiment coletado das API
+
         File file = new File(
                 "/home/pablo/workspace/tcc/sentimentTwitter_Method1/sourceCode/java/sentimentTwitter_Method1/src/jsonFiles/JsonFile-Method2.json");
         file.createNewFile();
         FileWriter fileWriter = new FileWriter(file);
 
         fileWriter.write(newJsonFileList.toJSONString());
+        fileWriter.flush();
+         */
+        fileWriter.write("]");
         fileWriter.flush();
         fileWriter.close();
 

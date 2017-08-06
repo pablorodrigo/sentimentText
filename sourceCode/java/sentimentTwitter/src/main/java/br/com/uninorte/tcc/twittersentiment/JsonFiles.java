@@ -1,4 +1,4 @@
-package sentimentTwitter_Method1;
+package br.com.uninorte.tcc.twittersentiment;
 
 import java.io.FileReader;
 
@@ -10,8 +10,6 @@ public class JsonFiles {
 
 	@SuppressWarnings("unchecked")
 	public JSONArray jsonFileRead(String fileLocation) throws Exception {
-
-		fileLocation = "/home/pablo/workspace/trabalhoUninorte/sentimentTwitter_Method1/sourceCode/java/sentimentTwitter_Method1/src/jsonFiles/100twitters.json";
 		
 		// novo array de json
 		JSONArray newJsonArray = new JSONArray();

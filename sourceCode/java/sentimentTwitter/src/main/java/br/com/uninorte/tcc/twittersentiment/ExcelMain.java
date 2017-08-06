@@ -1,5 +1,4 @@
-package sentimentTwitter_Method2;
-
+package br.com.uninorte.tcc.twittersentiment;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -7,7 +6,7 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 
-public class ExcelMain2 {
+public class ExcelMain {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) throws Exception {
@@ -35,14 +34,18 @@ public class ExcelMain2 {
             // pega todos os objetos dentro da array
             JSONObject twitter = (JSONObject) fileJsonArray.get(i);
 
+            //pega os objeto dentro de um determinado array
+            JSONObject sentiment = (JSONObject) twitter.get("sentiment");
+
+
             newObject_for_newJsonArray.put("originalText", twitter.get("originalText"));
-            newObject_for_newJsonArray.put("sentiment", twitter.get("sentiment"));
+            newObject_for_newJsonArray.put("sentiment", sentiment.get("type"));
             newJsonArray.add(newObject_for_newJsonArray);
             newObject_for_newJsonArray = new JSONObject();
 
         }
 
-        CreateFileExecel2 createFileExecel = new CreateFileExecel2();
+        CreateFileExecel createFileExecel = new CreateFileExecel();
         createFileExecel.expExcel("test_execel_01.xls", newJsonArray);
 
 
