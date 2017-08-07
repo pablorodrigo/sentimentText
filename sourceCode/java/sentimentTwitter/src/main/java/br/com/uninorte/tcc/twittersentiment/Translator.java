@@ -34,14 +34,14 @@ public class Translator {
         }
  */
 
-       HttpResponse<JsonNode> response = null;
+        HttpResponse<JsonNode> response = null;
         try {
             response = Unirest.post("https://translation.googleapis.com/language/translate/v2?key=AIzaSyD6h-jESBjPYdeHJgNELJDqnA_h1usWG-U&")
                     .header("Content-Type", "application/json; charset=UTF-8")
                     .header("Accept", "application/json; charset=UTF-8")
-                    .queryString("target","en")
-                    .queryString("source","pt")
-                    .queryString("q",text)
+                    .queryString("target", "en")
+                    .queryString("source", "pt")
+                    .queryString("q", text)
                     .asJson();
 
         } catch (UnirestException e) {
@@ -68,19 +68,25 @@ public class Translator {
      */
     public String dicionaryPT(String text) {
         return text
-                .replaceAll("ñ", "não")
-                .replaceAll("Ñ", "não")
-                .replaceAll("pqp", "puta+que+pariu")
-                .replaceAll("Hj", "Hoje")
-                .replaceAll("hj", "hoje")
-                .replaceAll("msg", "mensagem")
-                .replaceAll("Telefônica", "telefonia")
-                .replaceAll("pré", "pré-pago")
-                .replaceAll("pós", "pós-pago")
+                .replaceAll("[ñÑ]", "não")
                 .replaceAll("https://www.", "")
-                .replaceAll("Tweetar", "Tweet")
-                .replaceAll("PORRA", "merda")
-                .replaceAll("saco", "merda");
+                .replaceAll("\\b(?i)Telefônica\\b", "telefonia")
+                .replaceAll("\\b(?i)pré\\b", "pré-pago")
+                .replaceAll("\\b(?i)pós\\b", "pós-pago")
+                .replaceAll("\\b(?i)vlw\\b", "obrigado")
+                .replaceAll("\\b(?i)qdo\\b", "quando")
+                .replaceAll("\\b(?i)hj\\b", "hoje")
+                .replaceAll("\\b(?i)msg\\b", "mensagem")
+                .replaceAll("\\b(?i)Tweetar\\b", "Tweet")
+                .replaceAll("\\b(?i)tomara\\b", "hope")
+                // bad words
+                .replaceAll("\\b(?i)pqp\\b", "fucking hell")
+                .replaceAll("\\b(?i)kd\\b", "fucking hell")
+                .replaceAll("\\b(?i)vtnc\\b", "fuck you")
+                .replaceAll("\\b(?i)vsf\\b", "fuck you")
+                .replaceAll("\\b(?i)vai se fuder\\b", "fuck you")
+                .replaceAll("\\b(?i)saco\\b", "merda")
+                .replaceAll("\\b(?i)porra\\b", "merda");
 
 
         /*
@@ -91,6 +97,7 @@ public class Translator {
                 .replaceAll("\'", "")
                 .replaceAll("[-+=*&;%$#_|/]", "")
                 .replaceAll(" ", "+")
+                .replaceAll("(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]", "");
 
 
          */

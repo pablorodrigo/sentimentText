@@ -15,7 +15,9 @@ public class SentimentMain {
         JsonFiles jsonFiles = new JsonFiles();
 
 
-        String fileLocation = "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/100twitters.json";
+        //String fileLocation = "/home/pablo/workspace/tcc/sentimentTwitter/sourceCode/java/sentimentTwitter/src/jsonFiles/100twitters.json";
+        String fileLocation = "/home/pablo/Desktop/1-janeiro.json";
+
 
         auxJsonArray = jsonFiles.jsonFileRead(fileLocation);
         Translator translator = new Translator();
@@ -38,18 +40,20 @@ public class SentimentMain {
 		/*
         fazer a tradução do texto e sentiment do texto, armazenando num array json
 		 */
-        for (int i = 0; i < auxJsonArray.size(); i++) {
+        System.out.println("TAMANHO: " + auxJsonArray.size());
+        for (int i = 308; i < auxJsonArray.size(); i++) {
             System.out.println("traduzindo e sentimento do " + i);
             JSONObject texts = (JSONObject) auxJsonArray.get(i);
 
             aux = translator.translate(texts.get("text").toString());
             org.json.JSONObject tempJson = sentiment.sentimentResponse(aux);
 
+
             newJsonFile.put("id", i);
             newJsonFile.put("originalText", texts.get("text"));
             newJsonFile.put("translatedText", aux);
-            newJsonFile.put("polarity", tempJson.get("polarity"));
-            newJsonFile.put("type", tempJson.get("type"));
+            newJsonFile.put("polarity", !tempJson.has("polarity") ? null : tempJson.get("polarity"));
+            newJsonFile.put("type", !tempJson.has("type") ? null : tempJson.get("type"));
             //newJsonFileList.add(newJsonFile);
             fileWriter.write(newJsonFile.toJSONString() + ",");
             fileWriter.flush();
